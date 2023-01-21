@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manual.ChooseTime">
+
+    <TextView
+        android:id="@+id/TimeWindow"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="484dp"
+        android:gravity="center"
+        android:text="@string/choose_time_window" />
+
+    <TextView
+        android:id="@+id/StartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="318dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="347dp"
+        android:gravity="center_vertical"
+        android:text="@string/start_date" />
+
+    <TextView
+        android:id="@+id/FinishDate"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="249dp"
+        android:gravity="center_vertical"
+        android:text="@string/finish_date" />
+
+    <EditText
+        android:id="@+id/StartTime"
+        android:layout_width="180dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-181dp"
+        android:layout_marginTop="318dp"
+        android:layout_marginBottom="346dp"
+        android:layout_toEndOf="@+id/StartDate"
+        android:ems="10"
+        android:hint="@string/start_time"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/FinishTime"
+        android:layout_width="185dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-186dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginBottom="244dp"
+        android:layout_toEndOf="@+id/FinishDate"
+        android:ems="10"
+        android:hint="@string/end_time"
+        android:gravity="center_vertical"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/button_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="546dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="116dp"
+        android:gravity="center_vertical"
+        android:text="@string/choose_activity" />
+
+
+</RelativeLayout>

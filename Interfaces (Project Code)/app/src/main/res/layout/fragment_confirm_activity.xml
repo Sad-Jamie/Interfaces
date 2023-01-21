@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manual.ConfirmActivity">
+
+    <TextView
+        android:id="@+id/confirm_text"
+        android:layout_width="194dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="104dp"
+        android:gravity="center"
+        android:text="@string/is_this_event_to_be_scheduled_correct" />
+
+    <TextView
+        android:id="@+id/place_text"
+        android:layout_width="194dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="223dp"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/dateText2"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="422dp"
+        android:layout_marginEnd="223dp"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/startTimeText"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="31dp"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/endTimeText"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="31dp"
+        android:gravity="center"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/yes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="589dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="74dp"
+        android:text="@string/yes" />
+
+    <Button
+        android:id="@+id/no_button"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="253dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/no" />
+</RelativeLayout>

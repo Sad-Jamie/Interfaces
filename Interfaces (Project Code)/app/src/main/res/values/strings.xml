@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Interfaces</string>
+    <string name="chatbot">Chatbot</string>
+    <string name="assistant">Assistant</string>
+    <string name="manual">Manual</string>
+    <string name="live_transcription">Live Transcription</string>
+    <string name="speech_to_text">Speech To Text</string>
+    <string name="choose_time_window">CHOOSE TIME WINDOW</string>
+    <string name="start_date">Start Date</string>
+    <string name="finish_date">Finish Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="choose_activity">Choose Activity</string>
+    <string name="is_this_event_to_be_scheduled_correct">Is This Event To Be Scheduled Correct?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="do_you_want_to_delete_the_event">Do You Want To Delete The Event?</string>
+</resources>

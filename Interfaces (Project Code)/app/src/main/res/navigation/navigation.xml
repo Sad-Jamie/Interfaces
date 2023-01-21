@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/Chatbot">
+
+    <fragment
+        android:id="@+id/Chatbot"
+        android:name="com.example.interfaces.chatbot.Chatbot"
+        android:label="Chatbot"
+        tools:layout="@layout/fragment_chatbot">
+        <action
+            android:id="@+id/navigateToVoiceAssistant"
+            app:destination="@id/voiceAssistant" />
+        <action
+            android:id="@+id/action_Chatbot_to_date_picker"
+            app:destination="@id/date_picker" />
+    </fragment>
+
+    <fragment
+    android:id="@+id/voiceAssistant"
+    android:name="com.example.interfaces.assistant.VoiceAssistant"
+    android:label="Voice Assistant"
+    tools:layout="@layout/fragment_voice_assistant">
+    <action
+        android:id="@+id/navigateToFirstFragment2"
+        app:destination="@id/Chatbot" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/date_picker"
+        android:name="com.example.interfaces.manual.DatePicker"
+        android:label="Date Picker"
+        tools:layout="@layout/fragment_date_picker">
+        <action
+            android:id="@+id/action_date_picker_to_Chatbot"
+            app:destination="@id/Chatbot" />
+        <action
+            android:id="@+id/action_date_picker_to_events_list"
+            app:destination="@id/events_list" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/events_list"
+        android:name="com.example.interfaces.manual.EventsList"
+        android:label=""
+        tools:layout="@layout/fragment_events_list" >
+        <action
+            android:id="@+id/action_events_list_to_date_picker"
+            app:destination="@id/date_picker"/>
+        <action
+            android:id="@+id/action_events_list_to_choose_time"
+            app:destination="@id/choose_time" />
+        <action
+            android:id="@+id/action_events_list_to_deleteEvent"
+            app:destination="@id/deleteEvent" />
+        <argument
+            android:name="dateValue"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/choose_time"
+        android:name="com.example.interfaces.manual.ChooseTime"
+        android:label=""
+        tools:layout="@layout/fragment_choose_time" >
+        <action
+            android:id="@+id/action_choose_time_to_events_list"
+            app:destination="@id/events_list" />
+        <action
+            android:id="@+id/action_choose_time_to_activityType"
+            app:destination="@id/activityType" />
+        <argument
+            android:name="dates"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/activityType"
+        android:name="com.example.interfaces.manual.ActivityType"
+        android:label=""
+        tools:layout="@layout/fragment_activity_type" >
+        <action
+            android:id="@+id/action_activityType_to_choose_time"
+            app:destination="@id/choose_time" />
+        <action
+            android:id="@+id/action_activityType_to_activityPlace"
+            app:destination="@id/activityPlace" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="startTime"
+            app:argType="string" />
+        <argument
+            android:name="EndTime"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/activityPlace"
+        android:name="com.example.interfaces.manual.ActivityPlace"
+        android:label=""
+        tools:layout="@layout/fragment_activity_place" >
+        <action
+            android:id="@+id/action_activityPlace_to_confirmActivity"
+            app:destination="@id/confirmActivity" />
+        <action
+            android:id="@+id/action_activityPlace_to_activityType"
+            app:destination="@id/activityType" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="startTime"
+            app:argType="string" />
+        <argument
+            android:name="endTime"
+            app:argType="string" />
+        <argument
+            android:name="typeOfActivity"
+            app:argType="integer" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmActivity"
+        android:name="com.example.interfaces.manual.ConfirmActivity"
+        android:label="fragment_confirm_activity"
+        tools:layout="@layout/fragment_confirm_activity" >
+        <action
+            android:id="@+id/action_confirmActivity_to_activityPlace"
+            app:destination="@id/activityPlace" />
+        <action
+            android:id="@+id/action_confirmActivity_to_date_picker"
+            app:destination="@id/date_picker" />
+        <argument android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="startTime"
+            app:argType="string" />
+        <argument
+            android:name="endTime"
+            app:argType="string" />
+        <argument
+            android:name="place"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deleteEvent"
+        android:name="com.example.interfaces.manual.DeleteEvent"
+        android:label="fragment_delete_event"
+        tools:layout="@layout/fragment_delete_event" >
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_deleteEvent_to_date_picker"
+            app:destination="@id/date_picker" />
+        <argument
+            android:name="place"
+            app:argType="string" />
+        <argument
+            android:name="startTime"
+            app:argType="string" />
+        <argument
+            android:name="endTime"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>
